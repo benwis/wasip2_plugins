@@ -1,0 +1,7 @@
+package my:new-world;
+
+
+world new-world {
+
+  export greeting: func(name: string) -> string;
+}

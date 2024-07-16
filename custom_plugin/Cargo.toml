@@ -1,0 +1,16 @@
+[package]
+name = "custom_plugin"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "my:new-world"
+
+[package.metadata.component.dependencies]
+
+[dependencies]
+plugin_api={path="../plugin_api"}

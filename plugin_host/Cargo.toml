@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = { version = "1.38.0", features = ["full"] }
-wasmtime = { version="22.0.0", features=["component-model", "cranelift", "std", "runtime"] }
-wasmtime-wasi = "22.0.0"
+tokio = { version = "1.43.0", features = ["full"] }
+wasmtime = { version="29.0.1", features=["component-model", "cranelift", "std", "runtime"] }
+wasmtime-wasi = "29.0.1"

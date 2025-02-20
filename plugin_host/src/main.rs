@@ -30,7 +30,7 @@ async fn main() -> Result<()> {
         },
     );
     let component = Component::from_file(&engine, "./plugins/custom_plugin.wasm")?;
-    let (bindings, _) = NewWorld::instantiate_async(&mut store, &component, &linker).await?;
+    let bindings = NewWorld::instantiate_async(&mut store, &component, &linker).await?;
     // Here our `greet` function takes one name parameter,
     // but in the Wasmtime embedding API the first argument is always a `Store`.
     let greeting = bindings.call_greeting(&mut store, "Ben").await?;
